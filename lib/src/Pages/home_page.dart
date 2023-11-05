@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gfg_tutorials/src/Pages/carousel_slider_page.dart';
 import 'package:flutter_gfg_tutorials/src/Pages/rotate_box_page.dart';
 
 import '../core/util/helper_functions.dart';
@@ -63,6 +64,13 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () => HelperFunctions.navigateTo(
                   context,
                   const OctoImagePage(),
+                ),
+              ),
+              MyButton(
+                label: 'Carousel Slider',
+                onPressed: () => HelperFunctions.navigateTo(
+                  context,
+                  const CarouselSliderPage(),
                 ),
               ),
             ],
