@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gfg_tutorials/src/Pages/rotate_box_page.dart';
 
 import '../core/util/helper_functions.dart';
 import '../widgets/button_widget.dart';
@@ -47,6 +48,13 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () => HelperFunctions.navigateTo(
                   context,
                   const ClipRRectPage(),
+                ),
+              ),
+              MyButton(
+                label: 'RotatedBox Widget',
+                onPressed: () => HelperFunctions.navigateTo(
+                  context,
+                  const RotatedBoxPage(),
                 ),
               ),
             ],
