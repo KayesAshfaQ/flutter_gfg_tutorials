@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gfg_tutorials/src/Pages/clip_rect_page.dart';
 
 import '../util/helper_functions.dart';
 import '../widgets/button_widget.dart';
@@ -26,11 +27,18 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              ButtonWidget(
+              MyButton(
                 label: 'Opacity Widget',
                 onPressed: () => HelperFunctions.navigateTo(
                   context,
                   const OpacityPage(),
+                ),
+              ),
+              MyButton(
+                label: 'ClipRect Widget',
+                onPressed: () => HelperFunctions.navigateTo(
+                  context,
+                  const ClipRectPage(),
                 ),
               ),
             ],

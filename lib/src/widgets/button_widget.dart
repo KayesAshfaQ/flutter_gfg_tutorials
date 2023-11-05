@@ -1,11 +1,10 @@
-
 import 'package:flutter/material.dart';
 
-class ButtonWidget extends StatelessWidget {
+class MyButton extends StatelessWidget {
   final String label;
   final VoidCallback? onPressed;
 
-  const ButtonWidget({
+  const MyButton({
     super.key,
     required this.label,
     required this.onPressed,
@@ -30,22 +29,14 @@ class ButtonWidget extends StatelessWidget {
         overlayColor: MaterialStateProperty.all<Color>(
           Theme.of(context).colorScheme.onPrimary.withOpacity(0.12),
         ),
-        // padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
-        //   const EdgeInsets.all(16.0),
-        // ),
-        // elevation: MaterialStateProperty.all<double>(0.0),
-        // shadowColor: MaterialStateProperty.all<Color>(
-        //   Colors.transparent,
-        // ),
-        // animationDuration: const Duration(milliseconds: 200),
-        // enableFeedback: true,
-        // tapTargetSize: MaterialTapTargetSize.padded,
-        // alignment: Alignment.center,
-        // minimumSize: MaterialStateProperty.all<Size>(
-        //   const Size(88.0, 36.0),
-        // ),
       ),
-      child: Text(label),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(label),
+          const Icon(Icons.arrow_right),
+        ],
+      ),
     );
   }
 }
