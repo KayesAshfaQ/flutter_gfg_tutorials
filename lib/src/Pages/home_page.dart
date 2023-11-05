@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gfg_tutorials/src/Pages/clip_rect_page.dart';
 
-import '../util/helper_functions.dart';
+import '../core/util/helper_functions.dart';
 import '../widgets/button_widget.dart';
 import 'opacity_page.dart';
+import 'clip_rect_page.dart';
+import 'clip_rrect_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -39,6 +40,13 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () => HelperFunctions.navigateTo(
                   context,
                   const ClipRectPage(),
+                ),
+              ),
+              MyButton(
+                label: 'ClipRRect Widget',
+                onPressed: () => HelperFunctions.navigateTo(
+                  context,
+                  const ClipRRectPage(),
                 ),
               ),
             ],
