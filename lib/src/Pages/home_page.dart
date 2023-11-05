@@ -3,6 +3,7 @@ import 'package:flutter_gfg_tutorials/src/Pages/rotate_box_page.dart';
 
 import '../core/util/helper_functions.dart';
 import '../widgets/button_widget.dart';
+import 'octo_image_page.dart';
 import 'opacity_page.dart';
 import 'clip_rect_page.dart';
 import 'clip_rrect_page.dart';
@@ -55,6 +56,13 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () => HelperFunctions.navigateTo(
                   context,
                   const RotatedBoxPage(),
+                ),
+              ),
+              MyButton(
+                label: 'OctoImage Widget',
+                onPressed: () => HelperFunctions.navigateTo(
+                  context,
+                  const OctoImagePage(),
                 ),
               ),
             ],
